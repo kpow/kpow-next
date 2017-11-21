@@ -10,9 +10,9 @@ const Index = (props) => (
     <div>
         <PageLayout>
             <Projects data={props.projects} />
-            <Stars totalItemsInView={3} totalItems={2000} data={props.stars} dataSetter={getData('stars')} />
+            <Stars totalItemsInView={3} totalItems={props.stars.length} data={props.stars} dataSetter={getData('stars')} />
             <InstagramFeed totalItemsInView={4} totalItems={props.instagram.length} data={props.instagram} dataSetter={getData('instagrams')} />
-            <Books totalItemsInView={3} totalItems={403} data={props.books} dataSetter={getData('books')} />    
+            <Books totalItemsInView={3} totalItems={props.books.length} data={props.books} dataSetter={getData('books')} />    
         </PageLayout>
     </div>
 
