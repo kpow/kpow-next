@@ -1,6 +1,6 @@
 import { Button, Container, Grid, Header, Image, Segment, } from 'semantic-ui-react';
 import Slider from 'react-slick';
-
+import {Player, BigPlayButton} from 'video-react';
 const settings = {
     dots: false,
     infinite: true,
@@ -18,7 +18,15 @@ const ProjectSlider = (props) => (
         {props.data.map((item, index) => (
             <div key={index} style={{ width: "600px" }}>
 
-                <Image src={item.content.image.imageUrl} centered />
+                <Container>
+                    {item.content.video ? (
+
+                        <Player src={item.content.video.fileUrl} poster={item.content.image.imageUrl} muted>
+                            <BigPlayButton position="center" />
+                        </Player>
+
+                    ) : (<Image src={item.content.image.imageUrl} centered />)}
+                </Container>
 
                 <Grid columns={2} container stackable >
                     <Grid.Row>

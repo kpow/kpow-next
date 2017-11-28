@@ -37,6 +37,7 @@ const PageLayout = (props) => (
             <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css' />
             <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css' />
             <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css' />
+            <link rel='stylesheet' href='//kpow.space/static/css/video-react.css' />
             <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet" />
         </Head>
         <SiteHeader />

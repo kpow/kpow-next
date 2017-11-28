@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Card, Grid, Image} from 'semantic-ui-react';
-// import VideoModal from './VideoModal';
+import VideoModal from './VideoModal';
 
 class InstagramItem extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class InstagramItem extends Component {
           <Card.Meta>{this.props.obj.location.name}</Card.Meta>
           </Card.Content>
           <Card.Content extra>
-          {/*<VideoModal video={this.props.obj.videos.standard_resolution.url} />*/}
+          <VideoModal video={this.props.obj.videos.standard_resolution.url} />
           </Card.Content>
         </Card>
       </Grid.Column>
