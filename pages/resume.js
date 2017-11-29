@@ -11,6 +11,7 @@ const Resume = (props) => (
 
 )
 
+
 Resume.getInitialProps = async function () {
 
     return {
